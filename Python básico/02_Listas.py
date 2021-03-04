@@ -26,3 +26,18 @@ print(lista)
 #Agregar
 lista.append(888)
 print(lista)
+lista.insert(3, "Insertado")
+print(lista)
+lista.remove("Insertado")
+print(lista)
+lista.reverse()
+print(lista)
+lista.sort()
+print(lista)
+lista.pop()
+print(lista)
+#Cuenta el número de veces que aparece dentro del objeto
+#tipo list el objeto que se ingresa como argumento
+print(lista.count(1))
+lista.clear()
+print(lista)
