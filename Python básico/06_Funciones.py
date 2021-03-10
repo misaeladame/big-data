@@ -58,7 +58,7 @@ def superficie(**dato):
 superficie(base=22.0, altura=30, tipo = "Rectángulo")
 
 #return
-def promedio(*muesetras):
+def promedio(*muestras):
     return (len(muestras), sum(muestras) / len(muestras))
 
 media = promedio(1, 3, 5, 8, 11, 24, 90, 29)
@@ -99,4 +99,16 @@ print(factorial(4))
 
 #Tarea:
 #manejo de excepciones, funciones de orden superior
-#y decoradores
+#y decoradores. Qué es, como se programa, ejemplos
+
+#Funciones Lambda o anónimas
+#Sintáxis: lambda<argumentos>:<código>
+saluda = lambda texto='mundo', ancho=50: print('Hola, {}.'.format(texto).center(ancho))
+saluda()
+saluda('mundi', 20)
+#Función Lambda con condicional
+#Sintáxis: Lambda <argumentos>: <expresion_1> if <condicion> else <expresión_2>
+es_par = lambda numero: True if numero % 2 == 0 else False
+print(es_par(4))
+factorial = lambda numero: numero * factorial(numero - 1) if numero > 1 else 1 
+print(factorial(5))
